@@ -1,0 +1,50 @@
+//CSSTransition animations
+.searchBar-enter {
+    opacity: .3;
+}
+
+.searchBar-enter-active {
+    opacity: 1; 
+    transition: opacity .2s ease-in;
+}
+
+.searchBar-exit {
+    opacity: 1;
+}
+
+.searchBar-exit-active {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+
+//Main styles
+#searchButtonContainer {
+    display: flex;
+    #searchButton {
+        font-size: 22px;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+#searchContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    #closeSearchBtn {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 7px;
+        margin-top: 7px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

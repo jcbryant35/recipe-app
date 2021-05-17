@@ -1,0 +1,71 @@
+#boxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    main {
+        border: 1px solid black;
+        height: 260px;
+        width: 90%;
+        #recipeTitle {
+            border-bottom: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        #recipeImageBox {
+            height: 214.5px;
+            width: 100%;
+            background-color: beige;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            #openModalBtn {
+               position: relative;
+               top: 75%;
+               height: 20%;
+            }    
+        }
+    }
+    #ratingsBox {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 90%;
+        height: auto;
+        padding: 5px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {    
+    #boxContainer {
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {  
+    #boxContainer {
+        width: 25%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {  
+    #boxContainer {
+       width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1200px) {  
+    #boxContainer {
+       width: 25%;
+    }
+}
+
+

@@ -1,0 +1,92 @@
+#commentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: auto;
+}
+
+#commentWrapper .commentHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+
+#commentWrapper .commentHeader .form {
+  text-align: center;
+}
+
+#commentWrapper .commentHeader .form .reviewTextBox {
+  width: 70%;
+  height: 150px;
+  resize: none;
+  margin-top: 15px;
+  border: 1px solid grey;
+  margin-bottom: 1px;
+}
+
+#commentWrapper .commentHeader .form .userInput {
+  border: 1px solid grey;
+}
+
+#commentWrapper .commentHeader .form .submitReviewBtn {
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  color: white;
+  background-color: rgba(7, 7, 7, 0.85);
+}
+
+#commentWrapper .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin: 25px;
+}
+
+#commentWrapper .reviews .user {
+  font-size: 4vw;
+}
+
+#commentWrapper .reviews .text {
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 4vw;
+  margin-bottom: 50px;
+  background-color: #f7f7d7;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #commentWrapper .reviews .text {
+    font-size: 2.5vh;
+  }
+}
+/*# sourceMappingURL=comment-styles.css.map */

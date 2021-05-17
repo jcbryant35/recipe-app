@@ -1,0 +1,239 @@
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#container .fa-home {
+  color: white;
+  font-size: 28px;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+#container .fa-home:hover {
+  opacity: 0.5;
+}
+
+#container #aboutTextBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("./borderfix1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#container #aboutTextBox #aboutHeaderPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: url("./chef2.jpg") no-repeat center center;
+  background-size: cover;
+  height: 160px;
+  width: 160px;
+  margin-top: 25px;
+  position: relative;
+}
+
+#container #aboutTextBox h2 {
+  font-family: cursive;
+  border-bottom: 1px solid black;
+  text-shadow: 1px 2px 2px #ceb006;
+}
+
+#container #aboutTextBox p {
+  text-indent: 20px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  width: 75%;
+  padding: 0px 15px 0px 15px;
+  font-size: 17px;
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+  #container {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #container #mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #container #mainBox #aboutTextBox {
+    background-image: url("./borderfix1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+  }
+  #container #mainBox #aboutTextBox p {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+
+/* Small devices (480px and up) */
+@media only screen and (min-width: 480px) {
+  #container #mainBox #aboutTextBox {
+    height: 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #container {
+    height: 100vh;
+  }
+  #container #mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #container #mainBox #aboutTextBox {
+    background-image: url("./border.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+    width: 100%;
+  }
+  #container #mainBox #aboutTextBox p {
+    width: 60%;
+    margin-top: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #container #mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #container #mainBox #aboutTextBox {
+    background-image: url("./border.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 40%;
+  }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1024px) {
+  #container #mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #container #mainBox #aboutTextBox {
+    background-image: url("./border.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  #container #mainBox #aboutTextBox #aboutHeaderPic {
+    height: 250px;
+    width: 250px;
+    margin-top: 0px;
+  }
+  #container #mainBox #aboutTextBox h2 {
+    font-size: 4.5vw;
+  }
+  #container #mainBox #aboutTextBox p {
+    font-size: 3vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #container #mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #container #mainBox #aboutTextBox {
+    background-image: url("./border.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    max-width: 675px;
+  }
+  #container #mainBox #aboutHeaderPic {
+    height: 160px !important;
+    width: 160px !important;
+  }
+  #container #mainBox h2 {
+    font-size: 5vh !important;
+  }
+  #container #mainBox p {
+    font-size: 2.1vh !important;
+    padding: 10px;
+  }
+}
+
+/* Large laptops and desktops (1680px and up) */
+@media only screen and (min-width: 1680px) {
+  #container #mainBox #aboutTextBox {
+    height: 100%;
+    max-width: 750px;
+  }
+}
+/*# sourceMappingURL=about-styles.css.map */

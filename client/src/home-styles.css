@@ -1,0 +1,425 @@
+.navBar-enter {
+  width: 0px !important;
+}
+
+.navBar-enter-active {
+  width: 300px !important;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+.navBar-enter-done {
+  width: 300px !important;
+}
+
+.navBar-exit {
+  width: 300px !important;
+}
+
+.navBar-exit-active {
+  width: 0px !important;
+  -webkit-transition: width .5s ease-out;
+  transition: width .5s ease-out;
+}
+
+.navBar-exit-done {
+  width: 0px !important;
+}
+
+.links {
+  display: none;
+}
+
+.links-enter {
+  opacity: 0;
+}
+
+.links-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.links-enter-done {
+  opacity: 1;
+}
+
+.links-exit {
+  opacity: 1;
+}
+
+.links-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+}
+
+.links-exit-done {
+  opacity: 0;
+}
+
+#mainBox {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mainBox nav {
+  width: 100%;
+  height: 48%;
+  border-bottom: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url("logogold.PNG");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#mainBox nav #navBtn {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  width: 60px;
+  height: 25%;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+#mainBox nav #navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.97);
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+}
+
+#mainBox nav #navBar #closeNavBtn {
+  color: white;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  font-size: 21px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+#mainBox nav #navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15%;
+  list-style-type: none;
+}
+
+#mainBox nav #navBar ul li {
+  line-height: 60px;
+  font-size: 6vw;
+  letter-spacing: 1.5px;
+}
+
+#mainBox nav #navBar ul li a {
+  color: #c5c573;
+  text-shadow: 1px 1px 2px white;
+  margin-left: 30px;
+}
+
+#mainBox nav #navBar #navImg {
+  height: 225px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#mainBox main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./border.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  background-position-x: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#mainBox main #borderBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+#mainBox main #borderBox #chefImg {
+  height: 160px;
+  width: 160px;
+  margin-top: 5px;
+  background-image: url("./chef2.jpg");
+  background-size: contain;
+}
+
+#mainBox main #borderBox #featureBox {
+  height: 220px;
+  width: 275px;
+}
+
+#mainBox main #borderBox #featureBox #featureText {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+#mainBox main #borderBox #featureBox #featureText h2 {
+  letter-spacing: 1.5px;
+  font-size: 5vw;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-shadow: 1px 2px 2px #ceb006;
+}
+
+#mainBox main #borderBox #featureBox img {
+  width: 100%;
+  height: 165px;
+}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+  main {
+    width: 100%;
+  }
+  main #borderBox {
+    height: 46vh;
+  }
+  main #borderBox #chefImg {
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+  main #featureBox {
+    width: 10vw;
+    height: auto;
+  }
+  main #featureBox img {
+    height: auto;
+  }
+  main .slide {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  main .slide img {
+    padding: 15px;
+  }
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  #mainBox nav {
+    background-size: 100% 110%;
+  }
+  #mainBox nav #navBar ul li {
+    line-height: 50px;
+  }
+  main {
+    width: 50%;
+  }
+  main #borderBox {
+    height: 53.5vh;
+    width: 60%;
+  }
+  main #borderBox #chefImg {
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+  main #featureBox {
+    width: 100%;
+    height: auto;
+  }
+  main #featureBox img {
+    height: auto;
+  }
+  main .slide {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #mainBox nav {
+    background-size: 130% 100% !important;
+  }
+}
+
+@media only screen and (min-height: 737px) {
+  #mainBox nav {
+    height: 60vh;
+    background-size: 120% 100%;
+  }
+  #mainBox nav #navBar {
+    width: 60%;
+  }
+  #mainBox main #borderBox {
+    height: 45vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #mainBox nav #navBar {
+    width: 60%;
+  }
+  #mainBox main #borderBox img {
+    height: 190px;
+  }
+  #mainBox main .slide {
+    margin-top: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #mainBox nav {
+    background-size: 100% 120% !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #mainBox #navBtn:hover {
+    opacity: 0.5;
+  }
+  #mainBox nav {
+    background-image: url("logofix7.png");
+    background-size: contain;
+    background-color: black;
+  }
+  #mainBox nav #navBar {
+    width: 20%;
+  }
+  #mainBox nav #navBar #closeNavBtn:hover {
+    opacity: 0.5;
+  }
+  #mainBox nav #navBar ul li:hover {
+    opacity: 0.5;
+  }
+  #mainBox nav #navBar ul li .navLink {
+    font-size: 1.5vw;
+  }
+  #mainBox #main #borderBox #chefImg {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #mainBox #main #borderBox #featureBox #featureText h2 {
+    font-size: 4vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #mainBox nav #navBar {
+    width: 60%;
+  }
+  #mainBox nav #navBar ul li .navLink {
+    font-size: 3.5vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .navBar-enter {
+    width: 0px !important;
+  }
+  .navBar-enter-active {
+    width: 25% !important;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+  }
+  .navBar-enter-done {
+    width: 25% !important;
+  }
+  .navBar-exit {
+    width: 25% !important;
+  }
+  .navBar-exit-active {
+    width: 0px !important;
+    -webkit-transition: width .5s ease-out;
+    transition: width .5s ease-out;
+  }
+  .navBar-exit-done {
+    width: 0px !important;
+  }
+  #mainBox nav {
+    background-image: url("logofix7.png");
+    background-size: contain !important;
+    background-color: black;
+  }
+  #mainBox nav #navBar {
+    width: 25%;
+  }
+  #mainBox nav #navBar ul {
+    margin-top: 0px;
+    width: 60%;
+  }
+  #mainBox nav #navBar ul li .navLink {
+    font-size: 1.5vw;
+  }
+  #mainBox #main #borderBox {
+    width: 10%;
+    height: 90%;
+  }
+  #mainBox #main #borderBox #chefImg {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #mainBox #main #borderBox #featureBox #featureText h2 {
+    font-size: 4vh;
+  }
+  #mainBox #main #borderBox #featureBox .slide {
+    margin: 0px 1.5vw 1.5vw 1.5vw;
+  }
+}
+/*# sourceMappingURL=home-styles.css.map */

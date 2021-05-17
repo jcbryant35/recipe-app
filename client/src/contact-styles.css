@@ -1,0 +1,171 @@
+#contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.83);
+  padding: 15px;
+  padding-bottom: 50px;
+}
+
+#contactForm h4 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  text-shadow: 1px 2px 2px #ceb006;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#contactForm #form {
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#contactForm #form .emailBox {
+  width: 60vw;
+  margin-bottom: 5px;
+}
+
+#contactForm #form #textBox {
+  width: 100%;
+  height: 140px;
+  margin-top: 5px;
+  resize: none;
+}
+
+#contactForm #form button {
+  margin-left: 35%;
+  margin-top: 5px;
+  padding: 6px 10px 6px 10px;
+  border-radius: 8px;
+  background-color: #fdfdb1;
+  font-size: 20px;
+  letter-spacing: 3.5px;
+}
+
+#contactForm #form button:hover {
+  opacity: 0.85;
+}
+
+/* Extra small devices (320px and down)*/
+/* Extra small devices (400px and down) */
+@media only screen and (max-width: 400px) {
+  #contactForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40%;
+  }
+  #contactForm #form {
+    border: 1px solid grey;
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #contactForm #form .emailBox {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-height: 737px) {
+  #contactForm {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #contactForm #form {
+    width: 50%;
+    padding: 25px;
+  }
+  #contactForm #form .emailBox {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #contactForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contactForm #form {
+    border: 1px solid grey;
+    width: 20%;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #contactForm #form .emailBox {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and down) */
+@media only screen and (min-width: 1024px) {
+  #contactForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contactForm h4 {
+    font-size: 4vw;
+  }
+  #contactForm #form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid grey;
+    width: 50%;
+    padding: 35px;
+    border-radius: 10px;
+  }
+  #contactForm #form .emailBox {
+    width: 100%;
+  }
+  #contactForm #form button {
+    margin-right: 33%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #contactForm h4 {
+    font-size: 4vh;
+  }
+  #contactForm #form {
+    width: 35%;
+  }
+}
+/*# sourceMappingURL=contact-styles.css.map */

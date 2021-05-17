@@ -1,0 +1,224 @@
+//Animations via CSSTransition Group
+.navBar-enter {
+    width: 0px !important;
+}
+
+.navBar-enter-active {
+    width: 60% !important;
+    transition: width .5s ease;
+}
+
+.navBar-enter-done {
+    width: 60% !important;
+}
+
+.navBar-exit {
+    width: 60% !important;
+}
+
+.navBar-exit-active {
+    width: 0px !important;
+    transition: width .5s ease-out;
+}
+
+.navBar-exit-done {
+    width: 0px !important;
+}
+
+.links {
+    display: none;
+}
+
+.links-enter {
+    opacity: 0;
+}
+
+.links-enter-active {
+    opacity: 1;
+    transition: opacity 2s ease-in;
+}
+
+.links-enter-done {
+    opacity: 1
+}
+
+.links-exit {
+    opacity: 1;
+}
+
+.links-exit-active {
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+.links-exit-done {
+    opacity: 0;
+}
+
+
+//Main Styles
+#navBox {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    nav {
+        #navBtn {
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            width: 60px;
+            background: transparent;
+            outline: none;
+            border: none;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        #navBar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 250px;
+            background-color: rgba(0, 0, 0, 0.97);
+            position: fixed;
+            top: 0;
+            z-index: 20;
+            display: none;
+            #closeNavBtn {
+                color: white;
+                position: absolute;
+                right: 7px;
+                top: 5px;
+                font-size: 21px;
+                border-bottom: 1px solid white;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin-top: 7%;
+                list-style-type: none;
+                li {
+                    line-height: 50px;
+                    font-size: 6vw;
+                    letter-spacing: 1.5px;
+                    a {
+                        color: rgb(197, 197, 115);
+                        text-shadow: 1px 1px 2px white;
+                        margin-left: 30px;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+            #navImg {
+                height: 225px;
+                width: 200px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }    
+        }        
+    }
+}
+
+
+@media only screen and (min-height: 737px/*800px*/) {
+    #navBox {
+        nav {
+            #navBar {
+                width: 60%;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {  
+    #navBox {
+        nav {
+           #navBar {
+               width: 25%;
+               ul {
+                    li {
+                        line-height: 45px;
+                        a {
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+           } 
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {  
+    #navBox {
+        nav {
+           #navBar {
+               width: 60%;
+               ul {
+                    li {
+                        a {
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
+           } 
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {  
+    //Animations via CSSTransition Group
+.navBar-enter {
+    width: 0px !important;
+}
+
+.navBar-enter-active {
+    width: 30% !important;
+    transition: width .5s ease;
+}
+
+.navBar-enter-done {
+    width: 30% !important;
+}
+
+.navBar-exit {
+    width: 30% !important;
+}
+
+.navBar-exit-active {
+    width: 0px !important;
+    transition: width .5s ease-out;
+}
+
+.navBar-exit-done {
+    width: 0px !important;
+}
+
+    #navBox {
+        nav {
+           #navBar {
+               width: 30%;
+               ul {
+                   width: 60%;
+                   margin-top: 0px;
+                    li {
+                        a {
+                            font-size: 1.7vw;
+                        }
+                    }
+                }
+           } 
+        }
+    }
+}

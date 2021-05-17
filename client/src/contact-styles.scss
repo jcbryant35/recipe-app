@@ -1,0 +1,145 @@
+@import 'variables';
+
+#contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.83);
+    padding: 15px;
+    padding-bottom: 50px;
+    h4 {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        letter-spacing: 3px;
+        text-shadow: $textShadow; 
+        color: white;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    #form {
+        border: 1px solid grey;
+        padding: 15px;
+        border-radius: 10px;
+        .emailBox {
+            width: 60vw;
+            margin-bottom: 5px;
+        }
+        #textBox {
+            width: 100%;
+            height: 140px;
+            margin-top: 5px;
+            resize: none;
+        }
+        button {
+            margin-left: 35%;
+            margin-top: 5px;
+            padding: 6px 10px 6px 10px;
+            border-radius: 8px;
+            background-color: rgb(253, 253, 177);
+            font-size: 20px;
+            letter-spacing: 3.5px;
+            &:hover {
+                opacity: 0.85;
+            }
+        }    
+    }
+}
+
+
+/* Extra small devices (320px and down)*/
+@media only screen and (max-width: 320px) {
+
+}
+
+/* Extra small devices (400px and down) */
+@media only screen and (max-width: 400px) {  
+    #contactForm {
+        display: flex;
+        justify-content: center;
+        margin-top: 40%;
+        #form {
+            border: 1px solid grey;
+            width: 90%;
+            padding: 15px;
+            border-radius: 10px;
+            .emailBox {
+                width: 100%;
+            }
+        }
+    } 
+}
+
+@media only screen and (min-height: 737px) {
+    #contactForm {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {  
+    #contactForm {
+        #form {
+            width: 50%;
+            padding: 25px;
+            .emailBox {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {  
+    #contactForm {
+        display: flex;
+        justify-content: center;
+        #form {
+            border: 1px solid grey;
+            width: 20%;
+            padding: 15px;
+            border-radius: 10px;
+            .emailBox {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and down) */
+@media only screen and (min-width: 1024px) {  
+    #contactForm {
+        display: flex;
+        justify-content: center;
+        h4 {
+            font-size: 4vw;
+        }
+        #form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid grey;
+            width: 50%;
+            padding: 35px;
+            border-radius: 10px;
+            .emailBox {
+                width: 100%;
+            }
+            button {
+                margin-right: 33%;
+            }
+        }
+    }   
+}
+
+@media only screen and (min-width: 1200px) {  
+    #contactForm {
+        h4 {
+            font-size: 4vh;
+        }
+        #form {
+            width: 35%;
+        }
+    }
+}

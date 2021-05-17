@@ -1,0 +1,28 @@
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding-top: 15px;
+  color: white;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  footer p {
+    font-size: 4vw;
+  }
+}
+/*# sourceMappingURL=footer-styles.css.map */

@@ -1,0 +1,22 @@
+#mainContainer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    #titleBox {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        #titleLine {
+            border-bottom: 3px solid black;
+            height: auto;
+            width: 80%;
+        }
+        #titleText {
+            position: absolute;
+            background-color: white;
+        }
+    }
+}

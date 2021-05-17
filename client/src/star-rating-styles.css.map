@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "star-rating-styles.scss"
+    ],
+    "names": [],
+    "file": "star-rating-styles.css"
+}
