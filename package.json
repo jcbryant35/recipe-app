@@ -9,7 +9,11 @@
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "keywords": [
-    "recipes"
+    "recipes",
+    "southern food",
+    "soul food",
+    "southern recipes",
+    "recipes app"
   ],
   "author": "Jason C. Bryant",
   "license": "ISC",
