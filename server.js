@@ -99,9 +99,6 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
     app.use(express.static(path.join(__dirname, 'build')));
     
-    app.get('*', function (req, res) {
-      res.sendFile(path.join(__dirname, 'build', 'index.html'));
-    });
 
 
 
@@ -776,6 +773,10 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
 
     /*GET ROUTES*/
+    app.get('*', function (req, res) {
+      res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    });
+
     //Breakfast Route / + Breakfast Tacos
     app.get('/breakfast', (req, res) => {
         dbCollection.find({username: {$exists: true}, reviews: {$exists: true}}).toArray()
