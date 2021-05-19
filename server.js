@@ -97,7 +97,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json({ limit: '50mb' }));
 
-    app.use(express.static(path.join(__dirname, 'client', 'build')));
+    //app.use(express.static(path.join(__dirname, 'client', 'build')));
     
 
 
@@ -773,9 +773,9 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
 
     /*GET ROUTES*/
-    app.get('*', function (req, res) {
+   /* app.get('*', function (req, res) {
       res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-    });
+    });*/
 
     //Breakfast Route / + Breakfast Tacos
     app.get('/breakfast', (req, res) => {
