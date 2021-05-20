@@ -32,7 +32,7 @@ class App extends React.Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/" exact component={Home} />
+                        <Route path="https://www.downsouthrecipes.herokuapp.com/" exact component={Home} />
                         <Route path="/breakfast" exact component={Breakfast} />
                         <Route path="/lunch-dinner" exact component={LunchDinner} />
                         <Route path="/sides" exact component={Sides} />
