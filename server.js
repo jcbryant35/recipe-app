@@ -777,7 +777,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
     });
 
     //Breakfast Route / + Breakfast Tacos
-    app.get('downsouthrecipes.herokuapp.com/breakfast', (req, res) => {
+    app.get('http://downsouthrecipes.herokuapp.com/breakfast', (req, res) => {
         dbCollection.find({username: {$exists: true}, reviews: {$exists: true}}).toArray()
         .then(results => {
             res.send({ username: results, reviews: results, rating: results });
@@ -1394,7 +1394,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
     /*STAR RATINGS AVERAGE GET ROUTES*/
     //Breakfast Tacos
-    app.get('downsouthrecipes.herokuapp.com/breakfast-taco-rating', (req, res) => {
+    app.get('http://downsouthrecipes.herokuapp.com/breakfast-taco-rating', (req, res) => {
         db.collection('breakfast-tacos').aggregate([
         {
           $group: {
