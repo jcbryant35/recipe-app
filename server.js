@@ -775,7 +775,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
     /*GET ROUTES*/
     app.get('/*', function (req, res) {
-      res.sendFile(path.join(__dirname,  'app/build/index.html'));
+      res.sendFile(path.join(__dirname,  'app/build', 'index.html'));
     });
 
     //Breakfast Route / + Breakfast Tacos
