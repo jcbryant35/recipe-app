@@ -95,7 +95,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
     
     //MIDDLEWARES
-    app.use('/', apiProxy);
+    app.use(['/', '/breakfast', '/breakfast-taco-rating'], apiProxy);
     app.use(cors(corsOptions));
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json({ limit: '50mb' }));
