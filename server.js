@@ -5,7 +5,8 @@ const app = express();
 const port = process.env.PORT;
 const cors  = require('cors');
 const path = require('path');
-const proxy = require('http-proxy-middleware');
+const { createProxyMiddleware } = require('http-proxy-middleware');
+const apiProx = createProxyMiddleware('/api', { target: 'https://downsouthrecipes.herokuapp.com' });
 const MongoClient = require('mongodb').MongoClient;
 const dbUrl = process.env.DATABASE_URL;
 const admin = process.env.USER;
@@ -94,7 +95,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
     
     //MIDDLEWARES
-    app.use(proxy(['/api'], { target: 'http://localhost:8080' }));
+    app.use('/api', apiProxy);
     app.use(cors(corsOptions));
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json({ limit: '50mb' }));
