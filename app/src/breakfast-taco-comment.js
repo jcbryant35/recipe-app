@@ -66,7 +66,7 @@ export class BreakfastTacoCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://downsouthrecipes.herokuapp.com/breakfast-tacos/',  
+            url: '/breakfast-tacos/',  
             headers: {
                 'Content-Type': 'application/json'
             },
