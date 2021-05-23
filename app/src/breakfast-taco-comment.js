@@ -38,14 +38,14 @@ export class BreakfastTacoCommentBox extends React.Component {
 
     
     componentDidMount() {
-        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast')
+        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast/')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast')
+        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast/')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
