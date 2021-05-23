@@ -10,11 +10,11 @@ const MongoClient = require('mongodb').MongoClient;
 const dbUrl = process.env.DATABASE_URL;
 const admin = process.env.USER;
 const passKey = process.env.PASSWORD;
-var corsOptions = {
+/*var corsOptions = {
   origin: 'https://downsouthrecipes.herokuapp.com',
   credentials: true,
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+}*/
 
 
 MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
@@ -95,7 +95,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
     
     //MIDDLEWARES
     /*//app.use(['/', '/breakfast', '/breakfast-taco-rating'], apiProxy);*/
-    app.use(cors(corsOptions));
+    app.use(cors(/*corsOptions*/));
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json({ limit: '50mb' }));
     app.use(express.static(path.join(__dirname, 'app/build')));
