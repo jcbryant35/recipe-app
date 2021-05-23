@@ -5,7 +5,6 @@ const app = express();
 const port = process.env.PORT;
 const cors  = require('cors');
 const path = require('path');
-//const apiProxy = createProxyMiddleware(['/', '/breakfast', '/breakfast-taco-rating'], { target: 'https://rb.gy/t73qu2' });
 const MongoClient = require('mongodb').MongoClient;
 const dbUrl = process.env.DATABASE_URL;
 const admin = process.env.USER;
@@ -94,11 +93,9 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
     
     //MIDDLEWARES
-    /*//app.use(['/', '/breakfast', '/breakfast-taco-rating'], apiProxy);*/
-    app.use(cors(/*corsOptions*/));
+    app.use(cors());
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json({ limit: '50mb' }));
-    /*app.use(express.static(path.join(__dirname, 'app/build')));*/
     
 
 
@@ -772,12 +769,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
 
 
-
-    /*GET ROUTES*/
-   /* app.get('/*', function (req, res) {
-      res.sendFile(path.join(__dirname,  'app/build', 'index.html'));
-    });*/
-
+  /* GET/READ ROUTES */
     //Breakfast Route / + Breakfast Tacos
     app.get('/breakfast', (req, res) => {
         dbCollection.find({username: {$exists: true}, reviews: {$exists: true}}).toArray()

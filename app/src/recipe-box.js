@@ -241,7 +241,7 @@ export class BreakfastBurritoRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/breakfast-burrito-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast-burrito-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -342,7 +342,7 @@ export class OmeletteRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/omelette-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/omelette-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -447,7 +447,7 @@ export class BiscuitsNGravyRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/biscuits-gravy-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/biscuits-gravy-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -539,7 +539,7 @@ export class SausageBreakfastRollRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/sausage-breakfast-rolls-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/sausage-breakfast-rolls-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -621,7 +621,7 @@ export class CajunBatterRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/cajun-batter-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/cajun-batter-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -700,7 +700,7 @@ export class FriedChickenBatterRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/fried-chicken-batter-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/fried-chicken-batter-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -780,7 +780,7 @@ export class HouseSeasoning extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/house-seasoning-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/house-seasoning-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -855,7 +855,7 @@ export class CajunHouseSeasoning extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/cajun-seasoning-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/cajun-seasoning-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -933,7 +933,7 @@ export class ChickenTurkeyGravy extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/turkey-gravy-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/turkey-gravy-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1011,7 +1011,7 @@ export class BrownGravyRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/brown-gravy-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/brown-gravy-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1094,7 +1094,7 @@ export class CheeseburgerPieRecipe extends React.Component {
         }
     }
     componentDidMount() {
-        Axios.get('http://localhost:8080/cheeseburger-pie-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/cheeseburger-pie-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1181,7 +1181,7 @@ export class MeatLoafRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/meatloaf-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/meatloaf-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1275,7 +1275,7 @@ export class ChickenNoodleSoupRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/chicken-noodle-soup-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/chicken-noodle-soup-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1373,7 +1373,7 @@ export class ChickenDumplingsRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/chicken-dumplings-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/chicken-dumplings-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1481,7 +1481,7 @@ export class DummyStewRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/dummy-stew-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/dummy-stew-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1556,7 +1556,7 @@ export class SmotheredRoundSteakRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/round-steak-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/round-steak-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1636,7 +1636,7 @@ export class RoundSteakNGravyRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/round-steak-gravy-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/round-steak-gravy-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1728,7 +1728,7 @@ export class BeefRiceRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/beef-rice-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/beef-rice-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1826,7 +1826,7 @@ export class ShrimpScampiRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/beef-rice-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/beef-rice-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -1915,7 +1915,7 @@ export class ChickenFriedSteakNOystersRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/steak-n-oysters-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/steak-n-oysters-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2012,7 +2012,7 @@ export class GrannyBakedChickenRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/granny-baked-chicken-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/granny-baked-chicken-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2094,7 +2094,7 @@ export class CrabAndCornChowderRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/crab-corn-chowder-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/crab-corn-chowder-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2185,7 +2185,7 @@ export class ChickenSourCreamRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/chicken-sour-cream-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/chicken-sour-cream-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2271,7 +2271,7 @@ export class BroccoliCasseroleRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/broccoli-casserole-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/broccoli-casserole-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2355,7 +2355,7 @@ export class TurnipGreenSoupRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/turnip-soup-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/turnip-soup-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2445,7 +2445,7 @@ export class FriedPorkChopsRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/fried-porkchops-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/fried-porkchops-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2525,7 +2525,7 @@ export class FriedChickenRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/fried-chicken-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/fried-chicken-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2605,7 +2605,7 @@ export class BakedChickenRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/baked-chicken-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/baked-chicken-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2694,7 +2694,7 @@ export class HamburgerSteakRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/hamburger-steak-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/hamburger-steak-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2784,7 +2784,7 @@ export class BeefTipsRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/beef-tips-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/beef-tips-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2872,7 +2872,7 @@ export class CountryFriedSteakRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/country-fried-steak-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/country-fried-steak-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -2958,7 +2958,7 @@ export class SteakFingersRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/steak-fingers-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/steak-fingers-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3045,7 +3045,7 @@ export class BeefStewRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/beef-stew-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/beef-stew-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3137,7 +3137,7 @@ export class EtouffeRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/etouffe-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/etouffe-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3238,7 +3238,7 @@ export class GumboRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/gumbo-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/gumbo-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3343,7 +3343,7 @@ export class JambalayaRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/jambalaya-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/jambalaya-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3451,7 +3451,7 @@ export class RedBeansRiceRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/red-beans-rice-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/red-beans-rice-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3549,7 +3549,7 @@ export class BakedPotatoSoupRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/baked-potato-soup-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/baked-potato-soup-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3640,7 +3640,7 @@ export class CheeseBallRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/cheese-ball-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/cheese-ball-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3722,7 +3722,7 @@ export class HamRollUpsRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/ham-rollups-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/ham-rollups-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3804,7 +3804,7 @@ export class PieCrustRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/pie-crust-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/pie-crust-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3885,7 +3885,7 @@ export class WashingtonPieRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/washington-pie-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/washington-pie-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -3961,7 +3961,7 @@ export class LemonCakePieRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/lemon-cake-pie-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/lemon-cake-pie-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4048,7 +4048,7 @@ export class PeanutButterPieRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/peanut-butter-pie-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/peanut-butter-pie-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4125,7 +4125,7 @@ export class PeachCobblerRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/peach-cobbler-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/peach-cobbler-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4205,7 +4205,7 @@ export class GooeyButterCakeRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/gooey-butter-cake-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/gooey-butter-cake-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4297,7 +4297,7 @@ export class KaroCrazyCrunchRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/crazy-karo-crunch-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/crazy-karo-crunch-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4384,7 +4384,7 @@ export class BananaNutBreadRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/banana-nut-bread-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/banana-nut-bread-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4479,7 +4479,7 @@ export class MeatBallsRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/meatballs-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/meatballs-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4566,7 +4566,7 @@ export class MacaroniCheeseRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/macaroni-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/macaroni-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4651,7 +4651,7 @@ export class DinnerRollsRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/dinner-rolls-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/dinner-rolls-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4737,7 +4737,7 @@ export class FriedGreenTomatoesRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/fried-green-tomatoes-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/fried-green-tomatoes-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4823,7 +4823,7 @@ export class StuffedRedPotatoesRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/stuffed-red-potatoes-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/stuffed-red-potatoes-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4909,7 +4909,7 @@ export class PotatoBallsRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/potato-balls-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/potato-balls-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -4992,7 +4992,7 @@ export class HoppingJohnRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/hopping-john-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/hopping-john-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -5076,7 +5076,7 @@ export class SavoryCornDishRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/corn-dish-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/corn-dish-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -5158,7 +5158,7 @@ export class SquashAuGratinRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/squash-au-gratin-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/squash-au-gratin-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -5239,7 +5239,7 @@ export class StuffedBellPeppersRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/stuffed-bell-peppers-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/stuffed-bell-peppers-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -5330,7 +5330,7 @@ export class RolledCabbageRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/rolled-cabbage-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/rolled-cabbage-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -5422,7 +5422,7 @@ export class RoastedPotatoesRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/roasted-potatoes-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/roasted-potatoes-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -5505,7 +5505,7 @@ export class CollardGreensRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/collard-greens-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/collard-greens-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
@@ -5595,7 +5595,7 @@ export class JGreenBeansRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/green-beans-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/green-beans-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
