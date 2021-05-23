@@ -11,7 +11,7 @@ const dbUrl = process.env.DATABASE_URL;
 const admin = process.env.USER;
 const passKey = process.env.PASSWORD;
 var corsOptions = {
-  origin: 'http://localhost:3000/',
+  origin: 'http://localhost:3000',
   credentials: true,
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
@@ -774,9 +774,9 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
 
     /*GET ROUTES*/
-    app.get('/*', function (req, res) {
+    /*//app.get('/*', function (req, res) {
       res.sendFile(path.join(__dirname,  'app/build', 'index.html'));
-    });
+    });*/
 
     //Breakfast Route / + Breakfast Tacos
     app.get('/breakfast', (req, res) => {
