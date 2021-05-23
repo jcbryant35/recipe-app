@@ -140,7 +140,7 @@ export class BreakfastTacoRecipe extends React.Component {
 
     componentDidMount() {
 
-        Axios.get('/breakfast-taco-rating')
+        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast-taco-rating')
         .then(rating => {
             this.setState({ rating: rating.data.rating })
         })
