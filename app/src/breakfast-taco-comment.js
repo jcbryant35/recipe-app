@@ -25,7 +25,7 @@ export class BreakfastTacoCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'https://downsouthrecipes.herokuapp.com/breakfast-tacos/',
+            url: 'https://downsouthrecipes.herokuapp.com/breakfast-tacos',
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -38,14 +38,14 @@ export class BreakfastTacoCommentBox extends React.Component {
 
     
     componentDidMount() {
-        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast/')
+        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast/')
+        Axios.get('https://downsouthrecipes.herokuapp.com/breakfast')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -66,7 +66,7 @@ export class BreakfastTacoCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'https://downsouthrecipes.herokuapp.com/breakfast-tacos/',  
+            url: 'https://downsouthrecipes.herokuapp.com/breakfast-tacos',  
             headers: {
                 'Content-Type': 'application/json'
             },
