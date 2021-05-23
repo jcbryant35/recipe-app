@@ -11,7 +11,7 @@ const dbUrl = process.env.DATABASE_URL;
 const admin = process.env.USER;
 const passKey = process.env.PASSWORD;
 var corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://downsouthrecipes.herokuapp.com',
   credentials: true,
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
