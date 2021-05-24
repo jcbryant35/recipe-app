@@ -23,7 +23,7 @@ export class TurkeyGravyCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/turkey-gravy/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/turkey-gravy/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class TurkeyGravyCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/turkey-gravy')
+        Axios.get('https://downsouthrecipes.herokuapp.com/turkey-gravy')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/turkey-gravy')
+        Axios.get('https://downsouthrecipes.herokuapp.com/turkey-gravy')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class TurkeyGravyCommentBox extends React.Component {
    
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/turkey-gravy/',  
+            url: 'https://downsouthrecipes.herokuapp.com/turkey-gravy/',  
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -23,7 +23,7 @@ export class RedBeansNRiceCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/red-beans-rice/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/red-beans-rice/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class RedBeansNRiceCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/red-beans-rice')
+        Axios.get('https://downsouthrecipes.herokuapp.com/red-beans-rice')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/red-beans-rice')
+        Axios.get('https://downsouthrecipes.herokuapp.com/red-beans-rice')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -64,7 +64,7 @@ export class RedBeansNRiceCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/red-beans-rice/',  
+            url: 'https://downsouthrecipes.herokuapp.com/red-beans-rice/',  
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -23,7 +23,7 @@ export class LemonCakePieCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/lemon-cake-pie/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/lemon-cake-pie/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class LemonCakePieCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/lemon-cake-pie')
+        Axios.get('https://downsouthrecipes.herokuapp.com/lemon-cake-pie')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/lemon-cake-pie')
+        Axios.get('https://downsouthrecipes.herokuapp.com/lemon-cake-pie')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -64,7 +64,7 @@ export class LemonCakePieCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/lemon-cake-pie/',  
+            url: 'https://downsouthrecipes.herokuapp.com/lemon-cake-pie/',  
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -23,7 +23,7 @@ export class CrazyKaroCrunchCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/crazy-karo-crunch/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/crazy-karo-crunch/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class CrazyKaroCrunchCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/crazy-karo-crunch')
+        Axios.get('https://downsouthrecipes.herokuapp.com/crazy-karo-crunch')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/crazy-karo-crunch')
+        Axios.get('https://downsouthrecipes.herokuapp.com/crazy-karo-crunch')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class CrazyKaroCrunchCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/crazy-karo-crunch/',  
+            url: 'https://downsouthrecipes.herokuapp.com/crazy-karo-crunch/',  
             headers: {
                 'Content-Type': 'application/json'
             },

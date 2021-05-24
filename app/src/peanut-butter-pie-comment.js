@@ -23,7 +23,7 @@ export class PeanutButterPieCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/peanut-butter-pie/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/peanut-butter-pie/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class PeanutButterPieCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/peanut-butter-pie')
+        Axios.get('https://downsouthrecipes.herokuapp.com/peanut-butter-pie')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/peanut-butter-pie')
+        Axios.get('https://downsouthrecipes.herokuapp.com/peanut-butter-pie')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class PeanutButterPieCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/peanut-butter-pie/',  
+            url: 'https://downsouthrecipes.herokuapp.com/peanut-butter-pie/',  
             headers: {
                 'Content-Type': 'application/json'
             },

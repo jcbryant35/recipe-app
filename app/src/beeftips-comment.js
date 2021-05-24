@@ -23,7 +23,7 @@ export class BeefTipsCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/beef-tips/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/beef-tips/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class BeefTipsCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/beef-tips')
+        Axios.get('https://downsouthrecipes.herokuapp.com/beef-tips')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/beef-tips')
+        Axios.get('https://downsouthrecipes.herokuapp.com/beef-tips')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class BeefTipsCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/beef-tips/',  
+            url: 'https://downsouthrecipes.herokuapp.com/beef-tips/',  
             headers: {
                 'Content-Type': 'application/json'
             },

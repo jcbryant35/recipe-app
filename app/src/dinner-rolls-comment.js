@@ -23,7 +23,7 @@ export class DinnerRollsCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/dinner-rolls/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/dinner-rolls/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -36,14 +36,14 @@ export class DinnerRollsCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/dinner-rolls')
+        Axios.get('https://downsouthrecipes.herokuapp.com/dinner-rolls')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/dinner-rolls')
+        Axios.get('https://downsouthrecipes.herokuapp.com/dinner-rolls')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -64,7 +64,7 @@ export class DinnerRollsCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/dinner-rolls/',  
+            url: 'https://downsouthrecipes.herokuapp.com/dinner-rolls/',  
             headers: {
                 'Content-Type': 'application/json'
             },

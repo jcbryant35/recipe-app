@@ -23,7 +23,7 @@ export class SausageBreakfastRollsCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/sausage-breakfast-rolls/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/sausage-breakfast-rolls/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class SausageBreakfastRollsCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/sausage-breakfast-rolls')
+        Axios.get('https://downsouthrecipes.herokuapp.com/sausage-breakfast-rolls')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/sausage-breakfast-rolls')
+        Axios.get('https://downsouthrecipes.herokuapp.com/sausage-breakfast-rolls')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class SausageBreakfastRollsCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/sausage-breakfast-rolls/',  
+            url: 'https://downsouthrecipes.herokuapp.com/sausage-breakfast-rolls/',  
             headers: {
                 'Content-Type': 'application/json'
             },

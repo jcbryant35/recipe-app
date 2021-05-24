@@ -23,7 +23,7 @@ export class CheeseBallCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/cheese-ball/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/cheese-ball/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class CheeseBallCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/cheese-ball')
+        Axios.get('https://downsouthrecipes.herokuapp.com/cheese-ball')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/cheese-ball')
+        Axios.get('https://downsouthrecipes.herokuapp.com/cheese-ball')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class CheeseBallCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/cheese-ball/',  
+            url: 'https://downsouthrecipes.herokuapp.com/cheese-ball/',  
             headers: {
                 'Content-Type': 'application/json'
             },

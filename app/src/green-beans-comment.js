@@ -23,7 +23,7 @@ export class GreenBeansCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/green-beans/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/green-beans/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class GreenBeansCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/green-beans')
+        Axios.get('https://downsouthrecipes.herokuapp.com/green-beans')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/green-beans')
+        Axios.get('https://downsouthrecipes.herokuapp.com/green-beans')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -64,7 +64,7 @@ export class GreenBeansCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/green-beans/',  
+            url: 'https://downsouthrecipes.herokuapp.com/green-beans/',  
             headers: {
                 'Content-Type': 'application/json'
             },

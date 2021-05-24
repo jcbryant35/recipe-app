@@ -23,7 +23,7 @@ export class GooeyButterCakeCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/gooey-butter-cake/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/gooey-butter-cake/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class GooeyButterCakeCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/gooey-butter-cake')
+        Axios.get('https://downsouthrecipes.herokuapp.com/gooey-butter-cake')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/gooey-butter-cake')
+        Axios.get('https://downsouthrecipes.herokuapp.com/gooey-butter-cake')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class GooeyButterCakeCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/gooey-butter-cake/',  
+            url: 'https://downsouthrecipes.herokuapp.com/gooey-butter-cake/',  
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -23,7 +23,7 @@ export class HoppingJohnCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/hopping-john/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/hopping-john/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class HoppingJohnCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/hopping-john')
+        Axios.get('https://downsouthrecipes.herokuapp.com/hopping-john')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/hopping-john')
+        Axios.get('https://downsouthrecipes.herokuapp.com/hopping-john')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class HoppingJohnCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/hopping-john/',  
+            url: 'https://downsouthrecipes.herokuapp.com/hopping-john/',  
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -24,7 +24,7 @@ export class OmeletteCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/omelette/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/omelette/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -38,14 +38,14 @@ export class OmeletteCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/omelette')
+        Axios.get('https://downsouthrecipes.herokuapp.com/omelette')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/omelette')
+        Axios.get('https://downsouthrecipes.herokuapp.com/omelette')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class OmeletteCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/omelette/',  
+            url: 'https://downsouthrecipes.herokuapp.com/omelette/',  
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -23,7 +23,7 @@ export class ChickenSourCreamCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/chicken-sour-cream/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/chicken-sour-cream/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class ChickenSourCreamCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/chicken-sour-cream')
+        Axios.get('https://downsouthrecipes.herokuapp.com/chicken-sour-cream')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/chicken-sour-cream')
+        Axios.get('https://downsouthrecipes.herokuapp.com/chicken-sour-cream')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class ChickenSourCreamCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/chicken-sour-cream/',  
+            url: 'https://downsouthrecipes.herokuapp.com/chicken-sour-cream/',  
             headers: {
                 'Content-Type': 'application/json'
             },

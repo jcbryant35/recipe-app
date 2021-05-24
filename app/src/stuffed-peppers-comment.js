@@ -23,7 +23,7 @@ export class StuffedBellPeppersCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/stuffed-bell-peppers/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/stuffed-bell-peppers/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class StuffedBellPeppersCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/stuffed-bell-peppers')
+        Axios.get('https://downsouthrecipes.herokuapp.com/stuffed-bell-peppers')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/stuffed-bell-peppers')
+        Axios.get('https://downsouthrecipes.herokuapp.com/stuffed-bell-peppers')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -64,7 +64,7 @@ export class StuffedBellPeppersCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/stuffed-bell-peppers/',  
+            url: 'https://downsouthrecipes.herokuapp.com/stuffed-bell-peppers/',  
             headers: {
                 'Content-Type': 'application/json'
             },

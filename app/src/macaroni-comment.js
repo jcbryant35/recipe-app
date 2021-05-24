@@ -23,7 +23,7 @@ export class MacNCheeseCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/macaroni/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/macaroni/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class MacNCheeseCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/macaroni')
+        Axios.get('https://downsouthrecipes.herokuapp.com/macaroni')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/macaroni')
+        Axios.get('https://downsouthrecipes.herokuapp.com/macaroni')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -64,7 +64,7 @@ export class MacNCheeseCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/macaroni/',  
+            url: 'https://downsouthrecipes.herokuapp.com/macaroni/',  
             headers: {
                 'Content-Type': 'application/json'
             },

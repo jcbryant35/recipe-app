@@ -24,7 +24,7 @@ export class CheeseburgerPieCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/cheeseburger-pie/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/cheeseburger-pie/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -38,14 +38,14 @@ export class CheeseburgerPieCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/cheeseburger-pie')
+        Axios.get('https://downsouthrecipes.herokuapp.com/cheeseburger-pie')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/cheeseburger-pie')
+        Axios.get('https://downsouthrecipes.herokuapp.com/cheeseburger-pie')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -66,7 +66,7 @@ export class CheeseburgerPieCommentBox extends React.Component {
         
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/cheeseburger-pie/',  
+            url: 'https://downsouthrecipes.herokuapp.com/cheeseburger-pie/',  
             headers: {
                 'Content-Type': 'application/json'
             },

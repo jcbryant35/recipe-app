@@ -23,7 +23,7 @@ export class StuffedRedPotatoesCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/stuffed-red-potatoes/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/stuffed-red-potatoes/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class StuffedRedPotatoesCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/stuffed-red-potatoes')
+        Axios.get('https://downsouthrecipes.herokuapp.com/stuffed-red-potatoes')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/stuffed-red-potatoes')
+        Axios.get('https://downsouthrecipes.herokuapp.com/stuffed-red-potatoes')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -66,7 +66,7 @@ export class StuffedRedPotatoesCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/stuffed-red-potatoes/',  
+            url: 'https://downsouthrecipes.herokuapp.com/stuffed-red-potatoes/',  
             headers: {
                 'Content-Type': 'application/json'
             },

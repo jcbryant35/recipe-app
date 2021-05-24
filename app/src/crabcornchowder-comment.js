@@ -23,7 +23,7 @@ export class CrabCornChowderCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/crab-corn-chowder/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/crab-corn-chowder/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class CrabCornChowderCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/crab-corn-chowder')
+        Axios.get('https://downsouthrecipes.herokuapp.com/crab-corn-chowder')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/crab-corn-chowder')
+        Axios.get('https://downsouthrecipes.herokuapp.com/crab-corn-chowder')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class CrabCornChowderCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/crab-corn-chowder/',  
+            url: 'https://downsouthrecipes.herokuapp.com/crab-corn-chowder/',  
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -23,7 +23,7 @@ export class FriedChickenBatterCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/fried-chicken-batter/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/fried-chicken-batter/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class FriedChickenBatterCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/fried-chicken-batter')
+        Axios.get('https://downsouthrecipes.herokuapp.com/fried-chicken-batter')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/fried-chicken-batter')
+        Axios.get('https://downsouthrecipes.herokuapp.com/fried-chicken-batter')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class FriedChickenBatterCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/fried-chicken-batter/',  
+            url: 'https://downsouthrecipes.herokuapp.com/fried-chicken-batter/',  
             headers: {
                 'Content-Type': 'application/json'
             },

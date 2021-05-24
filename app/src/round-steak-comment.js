@@ -24,7 +24,7 @@ export class SmotheredRoundSteakCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/round-steak/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/round-steak/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -38,14 +38,14 @@ export class SmotheredRoundSteakCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/round-steak')
+        Axios.get('https://downsouthrecipes.herokuapp.com/round-steak')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/round-steak')
+        Axios.get('https://downsouthrecipes.herokuapp.com/round-steak')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -67,7 +67,7 @@ export class SmotheredRoundSteakCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/round-steak/',  
+            url: 'https://downsouthrecipes.herokuapp.com/round-steak/',  
             headers: {
                 'Content-Type': 'application/json'
             },

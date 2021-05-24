@@ -23,7 +23,7 @@ export class BananaNutBreadCommentBox extends React.Component {
         this.setState({ flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/banana-nut-bread/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/banana-nut-bread/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -35,14 +35,14 @@ export class BananaNutBreadCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/banana-nut-bread')
+        Axios.get('https://downsouthrecipes.herokuapp.com/banana-nut-bread')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/banana-nut-bread')
+        Axios.get('https://downsouthrecipes.herokuapp.com/banana-nut-bread')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -62,7 +62,7 @@ export class BananaNutBreadCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/banana-nut-bread/',  
+            url: 'https://downsouthrecipes.herokuapp.com/banana-nut-bread/',  
             headers: {
                 'Content-Type': 'application/json'
             },

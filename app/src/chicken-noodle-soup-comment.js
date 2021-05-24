@@ -24,7 +24,7 @@ export class ChickenNoodleSoupCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/chicken-noodle-soup/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/chicken-noodle-soup/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -38,14 +38,14 @@ export class ChickenNoodleSoupCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/chicken-noodle-soup')
+        Axios.get('https://downsouthrecipes.herokuapp.com/chicken-noodle-soup')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/chicken-noodle-soup')
+        Axios.get('https://downsouthrecipes.herokuapp.com/chicken-noodle-soup')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class ChickenNoodleSoupCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/chicken-noodle-soup/',  
+            url: 'https://downsouthrecipes.herokuapp.com/chicken-noodle-soup/',  
             headers: {
                 'Content-Type': 'application/json'
             },

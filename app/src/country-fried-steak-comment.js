@@ -23,7 +23,7 @@ export class CountryFriedSteakCommentBox extends React.Component {
         this.setState( { flashMessage: true });
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/country-fried-steak/reviews', 
+            url: 'https://downsouthrecipes.herokuapp.com/country-fried-steak/reviews', 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -37,14 +37,14 @@ export class CountryFriedSteakCommentBox extends React.Component {
     
     componentDidMount() {
 
-        Axios.get('http://localhost:8080/country-fried-steak')
+        Axios.get('https://downsouthrecipes.herokuapp.com/country-fried-steak')
         .then(reviews => {
             console.log(reviews.data.reviews)
             this.setState({ reviews: reviews.data.reviews })
         })
         .catch(err => console.log(err))
 
-        Axios.get('http://localhost:8080/country-fried-steak')
+        Axios.get('https://downsouthrecipes.herokuapp.com/country-fried-steak')
         .then(username => {
             console.log(username.data.username)
             this.setState({ username: username.data.username })
@@ -65,7 +65,7 @@ export class CountryFriedSteakCommentBox extends React.Component {
 
         Axios({
             method: 'POST',
-            url: 'http://localhost:8080/country-fried-steak/',  
+            url: 'https://downsouthrecipes.herokuapp.com/country-fried-steak/',  
             headers: {
                 'Content-Type': 'application/json'
             },
