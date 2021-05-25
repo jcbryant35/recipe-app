@@ -143,7 +143,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
         dbCollection.insertOne(req.body)
         .then(results => {
             console.log('1 document inserted...');
-            res.redirect('back' /*'https://downsouthrecipes.netlify.app/breakfast'*/);
+            res.redirect('https://downsouthrecipes.netlify.app/breakfast');
         })
         .catch(error => console.error(error));
     });
