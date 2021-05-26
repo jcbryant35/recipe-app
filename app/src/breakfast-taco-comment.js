@@ -68,7 +68,8 @@ export class BreakfastTacoCommentBox extends React.Component {
             method: 'POST',
             url: 'https://downsouthrecipes.herokuapp.com/breakfast-tacos',  
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': 'https://downsouthrecipes.netlify.app'
             },
             data: {
                 rating: rating

@@ -9,12 +9,12 @@ const MongoClient = require('mongodb').MongoClient;
 const dbUrl = process.env.DATABASE_URL;
 const admin = process.env.USER;
 const passKey = process.env.PASSWORD;
-var corsOptions = {
+/*var corsOptions = {
   'Access-Control-Allow-Origin': 'https://downsouthrecipes.netlify.app',
   //origin: 'https://downsouthrecipes.netlify.app',
   credentials: true,
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+}*/
 
 
 MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
@@ -94,7 +94,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
 
     
     //MIDDLEWARES
-    app.use(cors(corsOptions));
+    app.use(cors());
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json({ limit: '50mb' }));
     
