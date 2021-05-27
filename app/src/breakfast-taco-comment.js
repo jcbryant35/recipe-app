@@ -27,7 +27,8 @@ export class BreakfastTacoCommentBox extends React.Component {
             method: 'POST',
             url: 'https://downsouthrecipes.herokuapp.com/breakfast-tacos',
             headers: {
-                'Content-Type': 'application/jsonp'
+                'Allow-Access-Control-Origin': 'https://downsouthrecipes.netlify.app/',
+                'Content-Type': 'application/json'
             }
         }).then(response => {
             this.setState({ username: [response.data.id], reviews: [response.data.id] })
