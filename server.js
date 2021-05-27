@@ -95,6 +95,11 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
     
     //MIDDLEWARES
     app.use(cors());
+    app.use(function(req, res, next) {
+      res.header("Access-Control-Allow-Origin", "https://downsouthrecipes.netlify.app"); // update to match the domain you will make the request from
+      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      next();
+    });
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json({ limit: '50mb' }));
     
