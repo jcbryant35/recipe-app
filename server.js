@@ -99,12 +99,6 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
     app.use(express.json({ limit: '50mb' }));
     
 
-    app.all('/', function(req, res, next) {
-      res.header("Access-Control-Allow-Origin", "*");
-      res.header("Access-Control-Allow-Headers", "X-Requested-With");
-      next()
-    });
-
 
     //CONTACT FORM
     app.post('/about', (req, res) => {
@@ -148,7 +142,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
         dbCollection.insertOne(req.body)
         .then(results => {
             console.log('1 document inserted...');
-            res.redirect('back' /*'https://downsouthrecipes.netlify.app/breakfast'*/);
+            res.redirect('https://downsouthrecipes.netlify.app/breakfast');
         })
         .catch(error => console.error(error));
     });
