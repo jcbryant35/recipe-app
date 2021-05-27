@@ -27,7 +27,7 @@ export class BreakfastTacoCommentBox extends React.Component {
             method: 'POST',
             url: 'https://downsouthrecipes.herokuapp.com/breakfast-tacos',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/jsonp'
             }
         }).then(response => {
             this.setState({ username: [response.data.id], reviews: [response.data.id] })
