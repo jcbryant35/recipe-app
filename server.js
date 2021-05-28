@@ -144,6 +144,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
         dbCollection.insertOne(req.body)
         .then(results => {
             console.log('1 document inserted...');
+            res.header("Access-Control-Allow-Origin", "*");
             res.redirect('https://downsouthrecipes.netlify.app/breakfast');
         })
         .catch(error => console.error(error));
@@ -1403,6 +1404,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       ]).toArray()
         .then(results => {
             console.log({ rating: results[0].avgrating });
+            res.header("Access-Control-Allow-Origin", "*");
             res.send({ rating: results[0].avgrating });
         })
         .catch(error => console.error(error))
