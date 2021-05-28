@@ -145,7 +145,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
         .then(results => {
             console.log('1 document inserted...');
             //res.header("Access-Control-Allow-Origin", "*");
-            res.redirect('/index.html'/*'https://downsouthrecipes.netlify.app/breakfast'*/);
+            res.redirect('back');
         })
         .catch(error => console.error(error));
     });
