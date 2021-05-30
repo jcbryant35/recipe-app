@@ -86,7 +86,7 @@ export class BeefRiceCommentBox extends React.Component {
                 <div className="commentHeader">
                     {flashMessage && <SuccessMessage />}
                     <h5>Leave a Rating!</h5>
-                    <form className="form" action="/beef-rice" method="POST" >                    
+                    <form className="form" action="https://downsouthrecipes.herokuapp.com/beef-rice" method="POST" >                    
                         <Rater style={{fontSize: '35px'}} interactive={true} total={5} onRate={this.handleRate} rating={this.state.rating}  />
                         <br /><br />
                         <hr />
