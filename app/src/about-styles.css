@@ -66,6 +66,7 @@
   font-family: cursive;
   border-bottom: 1px solid black;
   text-shadow: 1px 2px 2px #ceb006;
+  font-size: 7.5vw;
 }
 
 #container #aboutTextBox p {
