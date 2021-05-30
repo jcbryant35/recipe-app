@@ -9,11 +9,6 @@ const MongoClient = require('mongodb').MongoClient;
 const dbUrl = process.env.DATABASE_URL;
 const admin = process.env.USER;
 const passKey = process.env.PASSWORD;
-/*var corsOptions = {
-  origin: 'https://downsouthrecipes.netlify.app',
-  //credentials: true,
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-}*/
 
 
 MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
@@ -129,7 +124,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
           console.log('Email sent: ' + info.response)
         }
       });
-      res.redirect('/about');
+      res.redirect('https://downsouthrecipes.netlify.app/about');
     });
 
 
@@ -154,7 +149,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection2.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/breakfast');
+          res.redirect('https://downsouthrecipes.netlify.app/breakfast');
       })
       .catch(error => console.error(error));
     });
@@ -164,7 +159,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection3.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/breakfast');
+          res.redirect('https://downsouthrecipes.netlify.app/breakfast');
       })
       .catch(error => console.error(error));
     });
@@ -174,7 +169,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection4.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/breakfast');
+          res.redirect('https://downsouthrecipes.netlify.app/breakfast');
       })
       .catch(error => console.error(error));
     });
@@ -184,7 +179,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection5.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/breakfast');
+          res.redirect('https://downsouthrecipes.netlify.app/breakfast');
       })
       .catch(error => console.error(error));
     });
@@ -194,7 +189,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection6.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/misc');
+          res.redirect('https://downsouthrecipes.netlify.app/misc');
       })
       .catch(error => console.error(error));
     });
@@ -204,7 +199,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection7.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/misc');
+          res.redirect('https://downsouthrecipes.netlify.app/misc');
       })
       .catch(error => console.error(error));
     });
@@ -214,7 +209,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection8.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/misc');
+          res.redirect('https://downsouthrecipes.netlify.app/misc');
       })
       .catch(error => console.error(error));
     });
@@ -224,7 +219,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection9.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/misc');
+          res.redirect('https://downsouthrecipes.netlify.app/misc');
       })
       .catch(error => console.error(error));
     });
@@ -234,7 +229,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection10.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/misc');
+          res.redirect('https://downsouthrecipes.netlify.app/misc');
       })
       .catch(error => console.error(error));
     });
@@ -243,7 +238,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection11.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/misc');
+          res.redirect('https://downsouthrecipes.netlify.app/misc');
       })
       .catch(error => console.error(error));
     });
@@ -253,7 +248,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection12.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -263,7 +258,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection13.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -273,7 +268,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection14.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -283,7 +278,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection15.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -293,7 +288,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection16.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -303,7 +298,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection17.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -313,7 +308,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection18.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -323,7 +318,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection19.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -333,7 +328,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection20.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -343,7 +338,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection21.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -353,7 +348,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection22.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -363,7 +358,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection23.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -373,7 +368,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection24.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -383,7 +378,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection25.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -393,7 +388,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection26.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -403,7 +398,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection27.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -413,7 +408,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection28.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -423,7 +418,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection29.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -433,7 +428,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection30.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -443,7 +438,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection31.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -453,7 +448,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection32.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -463,7 +458,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection33.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -473,7 +468,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection34.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -483,7 +478,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection35.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -493,7 +488,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection36.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -503,7 +498,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection37.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -513,7 +508,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection38.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -523,7 +518,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection39.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/lunch-dinner');
+          res.redirect('https://downsouthrecipes.netlify.app/lunch-dinner');
       })
       .catch(error => console.error(error));
     });
@@ -533,7 +528,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection40.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/snacks');
+          res.redirect('https://downsouthrecipes.netlify.app/snacks');
       })
       .catch(error => console.error(error));
     });
@@ -543,7 +538,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection41.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/snacks');
+          res.redirect('https://downsouthrecipes.netlify.app/snacks');
       })
       .catch(error => console.error(error));
     });
@@ -553,7 +548,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection42.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/desserts');
+          res.redirect('https://downsouthrecipes.netlify.app/desserts');
       })
       .catch(error => console.error(error));
     });
@@ -563,7 +558,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection43.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/desserts');
+          res.redirect('https://downsouthrecipes.netlify.app/desserts');
       })
       .catch(error => console.error(error));
     });
@@ -573,7 +568,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection44.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/desserts');
+          res.redirect('https://downsouthrecipes.netlify.app/desserts');
       })
       .catch(error => console.error(error));
     });
@@ -583,7 +578,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection45.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/desserts');
+          res.redirect('https://downsouthrecipes.netlify.app/desserts');
       })
       .catch(error => console.error(error));
     });
@@ -593,7 +588,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection46.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/desserts');
+          res.redirect('https://downsouthrecipes.netlify.app/desserts');
       })
       .catch(error => console.error(error));
     });
@@ -603,7 +598,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection47.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/desserts');
+          res.redirect('https://downsouthrecipes.netlify.app/desserts');
       })
       .catch(error => console.error(error));
     });
@@ -613,7 +608,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection48.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/desserts');
+          res.redirect('https://downsouthrecipes.netlify.app/desserts');
       })
       .catch(error => console.error(error));
     });
@@ -623,7 +618,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection49.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/desserts');
+          res.redirect('https://downsouthrecipes.netlify.app/desserts');
       })
       .catch(error => console.error(error));
     });
@@ -633,7 +628,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection50.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -643,7 +638,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection51.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -653,7 +648,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection52.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -663,7 +658,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection53.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -673,7 +668,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection54.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -683,7 +678,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection55.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -693,7 +688,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection56.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -703,7 +698,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection57.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -713,7 +708,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection58.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -723,7 +718,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection59.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -733,7 +728,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection60.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -743,7 +738,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection61.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -753,7 +748,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection62.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
@@ -763,7 +758,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       dbCollection63.insertOne(req.body)
       .then(results => {
           console.log('1 document inserted...');
-          res.redirect('/sides');
+          res.redirect('https://downsouthrecipes.netlify.app/sides');
       })
       .catch(error => console.error(error));
     });
