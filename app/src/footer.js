@@ -7,7 +7,7 @@ export class Footer extends React.Component {
         return (
             <div>
                 <footer>
-                    <span>&#9733;</span><p>Designed & Developed By: Jason Bryant 2020</p><span>&#9733;</span>
+                    <p><span>&#9733;</span>Designed & Developed By: Jason Bryant 2020<span>&#9733;</span></p>
                 </footer>
             </div>
         )
