@@ -145,7 +145,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
         .then(results => {
             console.log('1 document inserted...');
             //res.header("Access-Control-Allow-Origin", "*");
-            res.redirect('back');
+            res.redirect('/breakfast');
         })
         .catch(error => console.error(error));
     });
