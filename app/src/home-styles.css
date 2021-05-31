@@ -71,7 +71,7 @@
 }
 
 #mainBox nav {
-  width: 100%;
+  width: auto;
   height: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,6 +256,12 @@
   }
 }
 
+@media only screen and (width: 375px) {
+  #mainBox nav {
+    background-size: 150% 100% !important;
+  }
+}
+
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
   #mainBox nav {
@@ -299,6 +305,8 @@
     height: 60vh;
     width: 100%;
     background-size: 125% 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #mainBox nav #navBar {
     width: 60%;

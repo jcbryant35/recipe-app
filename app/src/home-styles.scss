@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     nav {
-        width: 100%;
+        width: auto; //100%;
         height: 48%;
         //border-bottom: 2px solid black;
         display: flex;
@@ -207,6 +207,13 @@
     }
 }
 
+@media only screen and (width: 375px) {
+    #mainBox {
+        nav {
+            background-size: 150% 100% !important;
+        }
+    }
+}
 
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
@@ -246,7 +253,7 @@
     }
 }
 
-@media only screen and (min-width: 480px/*800px*/) {
+@media only screen and (min-width: 480px) {
     #mainBox {
         nav {
             background-size: 130% 100% !important;
@@ -260,7 +267,7 @@
             height: 60vh;
             width: 100%;
             background-size: 125% 100%;
-            //background-size: contain;
+            object-fit: cover;
             #navBar {
                 width: 60%;
             }
