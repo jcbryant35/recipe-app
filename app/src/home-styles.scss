@@ -163,7 +163,7 @@
                     text-align: center;
                     h2 {
                         letter-spacing: 1.5px;
-                        font-size: 10vw;
+                        font-size: 8vw;
                         font-family: cursive/*"Comic Sans MS", sans-serif*/;
                         text-shadow: $textShadow; 
                     }
@@ -254,11 +254,13 @@
     }
 }
 
-@media only screen and (min-height: 737px/*800px*/) {
+@media only screen and (min-height: 737px /*800px*/) {
     #mainBox {
         nav {
             height: 60vh;
-            background-size: 125% 100%;
+            width: 100vw;
+            background-size: 150% 125%; //125% 100%; /*125% 100%;*/
+            //object-fit: contain;
             #navBar {
                 width: 60%;
             }
