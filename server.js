@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 const app = express();
 const port = process.env.PORT;
 const cors  = require('cors');
@@ -96,8 +96,9 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
     
 
     
+// BELOW WAS NODEMAILER, BUT CHANGED TO EMAILJS
 
-    //CONTACT FORM
+/*    //CONTACT FORM
     app.post('/about', (req, res) => {
       const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -126,7 +127,7 @@ MongoClient.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true }, 
       });
       res.redirect('https://downsouthrecipes.netlify.app/about');
     });
-
+*/
 
 
 
