@@ -299,7 +299,7 @@
   #mainBox nav {
     height: 60vh;
     width: 100vw;
-    background-size: 150% 125%;
+    background-size: 125% 100%;
   }
   #mainBox nav #navBar {
     width: 60%;
