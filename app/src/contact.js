@@ -28,7 +28,7 @@ export class EmailContactForm extends React.Component {
         
             Axios({
                 method: 'POST',
-                url:  'http://localhost:8080/about/',
+                url:  'https://downsouthrecipes.herokuapp.com/about/',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -54,7 +54,7 @@ export class EmailContactForm extends React.Component {
                 <div id="contactForm">
                     <h4>Contact us:</h4>
                     {flashMessage && <SuccessMessage />}
-                    <form action="/about" method="POST" id="form">
+                    <form action="https://downsouthrecipes.herokuapp.com/about" method="POST" id="form">
                         <input className="emailBox" type="text" name="firstName" placeholder="First Name.." required />
                         <br />
                         <input className="emailBox" type="text" name="lastName" placeholder="Last Name.." required />
