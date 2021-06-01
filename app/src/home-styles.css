@@ -294,12 +294,13 @@
   }
 }
 
-@media only screen and (width: 414px) {
-  #mainBox nav {
-    background-size: 100% 115% !important;
-  }
-}
-
+/*@media only screen and (width: 414px) {
+    #mainBox {
+        nav {
+            background-size: 100% 115% !important;
+        }
+    }
+}*/
 @media only screen and (height: 736px) {
   #mainBox nav {
     background-size: 100% 115% !important;
