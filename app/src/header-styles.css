@@ -19,6 +19,12 @@ header {
   }
 }
 
+@media only screen and (width: 414px) and (device-height: 736px) {
+  header {
+    background-size: 100% 115%;
+  }
+}
+
 @media only screen and (min-width: 480px) {
   header {
     background-size: 100% 120%;
