@@ -118,7 +118,8 @@
 
 @media only screen and (device-height: 736px) {
   #container #mainBox #aboutHeaderPic {
-    margin: 75px;
+    height: 100px !important;
+    width: 100px !important;
   }
 }
 
