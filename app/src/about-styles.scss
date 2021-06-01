@@ -34,7 +34,7 @@
             background-size: cover;
             height: 160px;
             width: 160px;
-            margin-top: 100px;
+            margin-top: 25px;
             position: relative;
         }
         h2 {
@@ -91,6 +91,17 @@
         #mainBox {
             #aboutTextBox {
                 height: 70%;
+            }
+        }
+    }
+}
+
+@media only screen and (device-height: 736px) {
+    #container {
+        #mainBox {
+            #aboutHeaderPic {
+                height: 125px;
+                margin-top: 75px;
             }
         }
     }
