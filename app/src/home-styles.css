@@ -300,9 +300,9 @@
   }
 }
 
-@media only screen and (height: 896px) {
+@media screen and (height: 896px) {
   #mainBox nav {
-    background-size: 100% 100% !important;
+    background-size: 120% 100% !important;
   }
 }
 
