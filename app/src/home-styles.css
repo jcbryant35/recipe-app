@@ -294,7 +294,7 @@
   }
 }
 
-@media only screen and (width: 414px) and (height: 736px) {
+@media only screen and (width: 414px) {
   #mainBox nav {
     background-size: 150% 100% !important;
   }
